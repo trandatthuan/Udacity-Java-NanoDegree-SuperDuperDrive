@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/bootstrap.min.css}">
+    <title>Error</title>
+</head>
+<body class="p-3 mb-2 bg-light text-black">
+    <div class="container">
+        <h1 class="text-info">Something went wrong!</h1>
+        <h5>This could be:</h5>
+        <ul>
+            <li>The url does not exist</li>
+            <li>Page is under maintenance</li>
+            <li>Unexpected error causing the page to crash</li>
+        </ul>
+        <a th:href="@{/home}">Go Home</a>
+    </div>
+</body>
+</html>
